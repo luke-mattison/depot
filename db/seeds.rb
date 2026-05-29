@@ -7,6 +7,7 @@
 # Visit https://pragprog.com/titles/rails72 for more book information.
 #---
 # encoding: utf-8
+
 Product.delete_all
 Product.create!(title: 'Programming Ruby 3.3 (5th Edition)',
   description:
@@ -57,3 +58,5 @@ Product.create!(title: 'Modern Front-End Development for Rails, Second Edition',
     </p>),
   image_url: 'nrclient2.jpg',
   price: 28.95)
+
+User.create! name: 'dave', password: Rails.application.credentials.dave_password
